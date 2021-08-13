@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        join
+        var arr1 = [1,2,3,4,5,"a","b","c","d","e"];
+        console.log(arr1.join());         //hasil: 1,2,3,4,5,a,b,c,d,e
+        console.log(arr1.join("."));      //hasil: 1.2.3.4.5.a.b.c.d.e
+        console.log(arr1.join("|"));      //hasil: 1|2|3|4|5|a|b|c|d|e
+        console.log(arr1.join("_"));      //hasil: 1_2_3_4_5_a_b_c_d_e
+        </script>
+        <script>
+            reverse
+            var arr1 = [1,2,3,4,5,"a","b","c","d","e"];
+            console.log(arr1.toString());         //hasil: 1,2,3,4,5,a,b,c,d,e
+              
+            arr1.reverse();
+            console.log(arr1.toString());         //hasil: e,d,c,b,a,5,4,3,2,1
+            </script>
+        <script>
+            sort
+            var arr1 = ["zulkifli","andi","erik","joko","dina"];
+            arr1.sort();
+            console.log(arr1.toString());         //hasil: andi,dina,erik,joko,zulkifli
+              
+            var arr2 = [3,5,2,8,,,1,31,22,44,33,11];
+            arr2.sort();
+            console.log(arr2.toString());         //hasil: 1,11,2,22,3,31,33,44,5,8,,
+            </script>
+        <script>
+            concat
+            var arr1 = [1,2,3,4,"a","b","c","d"];
+            console.log(arr1.toString());         //hasil: 1,2,3,4,a,b,c,d
+              
+            var arr2=arr1.concat(11,22,33,44);
+            console.log(arr2.toString());         //hasil: 1,2,3,4,a,b,c,d,11,22,33,44
+            </script>
+            <script>
+                slice
+                var arr1 = [1,2,3,4,"a","b","c","d"];
+                  
+                //slice dari index ke 2 sampai 4
+                var arr2 = arr1.slice(2,4)
+                console.log(arr2.toString());         //hasil: 3,4
+                  
+                //slice dari index ke 4 sampai akhir array
+                var arr3 = arr1.slice(4)
+                console.log(arr3.toString());         //hasil: a,b,c,d
+                  
+                //slice dari index ke 2 dari akhir array
+                var arr4 = arr1.slice(-2)
+                console.log(arr4.toString());         //hasil: c,d
+                  
+                //slice dari index ke 5 dari akhir array sampai
+                //index ke 2 dari akhir array
+                var arr5 = arr1.slice(-5,-2)
+                console.log(arr5.toString());         //hasil: 4,a,b
+                </script>
+
+                <script>
+                    splice
+                    var arr1 = [1,2,3,4,"a","b","c","d"];
+                    console.log(arr1.toString());     // hasil: 1,2,3,4,a,b,c,d
+                      
+                    //splice dari index ke 4
+                    var arr2 = arr1.splice(4)
+                      
+                    console.log(arr1.toString());     // hasil: 1,2,3,4
+                    console.log(arr2.toString());     // hasil: a,b,c,d
+                    </script>
+
+                    <script>
+                        pushandpop
+                        var arr1 = [];
+                          
+                        arr1.push("a","b","c");
+                        console.log(arr1.toString());   // hasil: a,b,c
+                          
+                        arr1.push("d");
+                        console.log(arr1.toString());   // hasil: a,b,c,d
+                          
+                        arr1.pop();
+                        console.log(arr1.toString());   // hasil: a,b,c
+                          
+                        arr1.pop();
+                        console.log(arr1.toString());   // hasil: a,b
+                        </script>
+                        
+                        <script>
+
+                            unshiftandshift 
+                            var arr1 = [];
+                              
+                            arr1.unshift("a","b","c");
+                            console.log(arr1.toString());   // hasil: a,b,c
+                              
+                            arr1.unshift("d");
+                            console.log(arr1.toString());   // hasil: d,a,b,c
+                              
+                            arr1.shift();
+                            console.log(arr1.toString());   // hasil: a,b,c
+                              
+                            arr1.shift();
+                            console.log(arr1.toString());   // hasil: b,c
+                            </script>
+                        
+                        <script>
+                            var arr1 = [1,2,3,4,"a","b","c","d"];
+                            console.log(arr1.toString());           // hasil: 1,2,3,4,a,b,c,d
+                            console.log(arr1.toLocaleString());     // hasil: 1,2,3,4,a,b,c,d
+                            </script>
+</body>
+</html>
